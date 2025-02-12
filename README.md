@@ -1,49 +1,59 @@
 # Restaurant Butler Robot 🤖🍽️
 
-This is a **ROS2-based restaurant butler robot** designed to automate food delivery in The French Door Café. The robot efficiently moves between the home position, kitchen, and customer tables (Table 1, 2, and 3), ensuring smooth and autonomous service.
 
-## Features 🚀
-- 🏠 Autonomous Navigation: Moves between home, kitchen, and tables.  
-- 📦 Order Management: Handles multiple orders efficiently.  
-- ⏳ Timeout Handling: Returns to home if no confirmation is received.  
-- ❌ Order Cancellation: Returns to home or kitchen if an order is canceled.
+This is a ROS 2-based autonomous restaurant butler robot designed to streamline food delivery operations at The French Door Café. By leveraging ROS 2 Humble, this robot automates food orders, moving seamlessly between the home position, kitchen, and customer tables (Table 1, Table 2, and Table 3). With simple yet effective task management, it ensures timely and efficient service.
 
-- Installation & Running the Code ⚙️
+Features 🚀
+🏠 Autonomous Navigation: Efficiently moves between the home, kitchen, and customer tables using ROS 2's navigation stack.
 
+📦 Order Management: Handles multiple orders, ensuring accurate delivery to the right table in sequence.
+
+⏳ Timeout Handling: If no confirmation is received from the kitchen or customer table, the robot returns to its home position after a timeout.
+
+❌ Order Cancellation: If an order is canceled, the robot returns to the kitchen or home, based on the task stage.
+
+Installation & Running the Code ⚙️
 Prerequisites
+Ensure ROS 2 Humble is installed and properly configured on your system.
+Clone the Repository
+Clone this repository to your local machine:
 
-Ensure you have ROS 2 Humble installed and set up.
-
-1. Clone the Repository
-
-git clone https://github.com/YOUR_USERNAME/restaurant-butler-robot.git
+bash
+Copy
+Edit
+git clone https://github.com/Nivedhan10/restaurant-butler-robot.git 
 cd restaurant-butler-robot
+Build and Source the Workspace
+Make sure you build and source your workspace:
 
-2. Build and Source the Workspace
-
+bash
+Copy
+Edit
 cd ~/ros2_ws
 colcon build
 source install/setup.bash
-
-3. Run the Order Manager Node
-
+Running the Code
+Run the Order Manager Node (Simulates order placement):
+bash
+Copy
+Edit
 ros2 run restaurant_butler order_manager
-
-4. Run the Butler Robot Node
-
+Run the Butler Robot Node (Executes the robot's food delivery tasks):
+bash
+Copy
+Edit
 ros2 run restaurant_butler butler_node
-
 Future Improvements 🌟
+✅ Navigation Stack: Implement advanced path planning using SLAM and Nav2 for dynamic environments.
 
-✅ Navigation Stack: Implement path planning using SLAM & Nav2.
+✅ Obstacle Avoidance: Integrate LiDAR or other sensor-based solutions for real-time obstacle detection and avoidance.
 
-✅ Obstacle Avoidance: Add LiDAR or sensor-based obstacle detection.
-
-✅ Voice Commands: Allow users to control the robot using voice.
+✅ Voice Commands: Enable voice control for an enhanced user experience and better interactivity with the robot.
 
 Author 🤖
-
 Nivedhan TS
+Email: tsnivedhan0@gmail.com
+LinkedIn: https://www.linkedin.com/in/nivedhan-ts/
+GitHub:  https://github.com/Nivedhan10
 
-Contact: tsnivedhan0@gmail.com
 
