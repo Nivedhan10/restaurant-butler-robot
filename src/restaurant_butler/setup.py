@@ -1,26 +1,22 @@
-from setuptools import find_packages, setup
+from setuptools import setup
 
 package_name = 'restaurant_butler'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
-    data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
-    ],
+    packages=[package_name],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='user',
-    maintainer_email='user@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='your_name',
+    maintainer_email='your_email@example.com',
+    description='Restaurant Butler Robot in ROS 2 Humble',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'butler_robot = restaurant_butler.butler_robot:main',
+           'butler_node = restaurant_butler.butler_node:main',
+        'order_manager = restaurant_butler.order_manager:main',
         ],
     },
 )

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/restaurant_butler/restaurant_butler.egg-info/PKG-INFO
+writing dependency_links to ../../build/restaurant_butler/restaurant_butler.egg-info/dependency_links.txt
+writing entry points to ../../build/restaurant_butler/restaurant_butler.egg-info/entry_points.txt
+writing requirements to ../../build/restaurant_butler/restaurant_butler.egg-info/requires.txt
+writing top-level names to ../../build/restaurant_butler/restaurant_butler.egg-info/top_level.txt
+reading manifest file '../../build/restaurant_butler/restaurant_butler.egg-info/SOURCES.txt'
+writing manifest file '../../build/restaurant_butler/restaurant_butler.egg-info/SOURCES.txt'
+running build
+running build_py
+copying restaurant_butler/butler_robot.py -> /home/user/ros2_ws/build/restaurant_butler/build/lib/restaurant_butler
+running install
+running install_lib
+copying /home/user/ros2_ws/build/restaurant_butler/build/lib/restaurant_butler/butler_robot.py -> /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler
+byte-compiling /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler/butler_robot.py to butler_robot.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/restaurant_butler/restaurant_butler.egg-info to /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler-0.0.0-py3.10.egg-info
+running install_scripts
+Installing butler_robot script to /home/user/ros2_ws/install/restaurant_butler/lib/restaurant_butler
+writing list of installed files to '/home/user/ros2_ws/build/restaurant_butler/install.log'
