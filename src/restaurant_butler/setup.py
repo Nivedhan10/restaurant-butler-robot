@@ -20,9 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'butler_node = restaurant_butler.butler_node:main',
-        'order_manager = restaurant_butler.order_manager:main',
-
+        'butler_robot = restaurant_butler.butler_robot:main',
         ],
     },
 )
