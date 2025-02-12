@@ -11,24 +11,24 @@ class ButlerNode(Node):
             'order_topic',
             self.handle_order,
             10)
-        self.orders = []  # List to store orders
+        self.orders = []  
         self.get_logger().info('Butler Node is running...')
 
     def handle_order(self, msg):
         """Handles new orders and adds them to the list."""
         order_info = msg.data
         self.get_logger().info(f"Received: {order_info}")
-        table_number = int(order_info.split()[-1])  # Extract table number
-        self.orders.append(table_number)  # Add order to the list
+        table_number = int(order_info.split()[-1])  
+        self.orders.append(table_number)  
 
-        # If it's the first order, start processing
+
         if len(self.orders) == 1:
             self.process_orders()
 
     def process_orders(self):
         """Processes all orders one by one."""
         while self.orders:
-            table_number = self.orders.pop(0)  # Get the first order
+            table_number = self.orders.pop(0)  
             self.get_logger().info(f"Processing order for Table {table_number}")
 
             # Simulate movement to kitchen and table
@@ -38,7 +38,7 @@ class ButlerNode(Node):
             # Simulate waiting for kitchen confirmation
             if not self.wait_for_confirmation("Kitchen"):
                 self.get_logger().info("No response from kitchen, returning to home.")
-                continue  # Skip this order
+                continue  
 
             self.get_logger().info(f"Picked up food for Table {table_number}")
 
@@ -64,13 +64,13 @@ class ButlerNode(Node):
         self.get_logger().info(f"Waiting for confirmation at {location}...")
         for _ in range(timeout):
             time.sleep(1)
-            if self.simulate_confirmation():  # Check for simulated confirmation
+            if self.simulate_confirmation(): 
                 return True
         return False
 
     def simulate_confirmation(self):
         """Simulate confirmation (Always returns True here)."""
-        return True  # Change this to False to test timeout
+        return True  
 
     def return_to_kitchen(self):
         """Handles the return to kitchen if customer doesn't confirm."""
