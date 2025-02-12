@@ -1,0 +1,24 @@
+[1.112s] Invoking command in '/home/user/ros2_ws/src/restaurant_butler': PYTHONPATH=/home/user/ros2_ws/build/restaurant_butler/prefix_override:/home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/restaurant_butler build --build-base /home/user/ros2_ws/build/restaurant_butler/build install --record /home/user/ros2_ws/build/restaurant_butler/install.log --single-version-externally-managed install_data
+[1.524s] running egg_info
+[1.524s] writing ../../build/restaurant_butler/restaurant_butler.egg-info/PKG-INFO
+[1.525s] writing dependency_links to ../../build/restaurant_butler/restaurant_butler.egg-info/dependency_links.txt
+[1.525s] writing entry points to ../../build/restaurant_butler/restaurant_butler.egg-info/entry_points.txt
+[1.525s] writing requirements to ../../build/restaurant_butler/restaurant_butler.egg-info/requires.txt
+[1.525s] writing top-level names to ../../build/restaurant_butler/restaurant_butler.egg-info/top_level.txt
+[1.527s] reading manifest file '../../build/restaurant_butler/restaurant_butler.egg-info/SOURCES.txt'
+[1.529s] writing manifest file '../../build/restaurant_butler/restaurant_butler.egg-info/SOURCES.txt'
+[1.529s] running build
+[1.529s] running build_py
+[1.530s] copying restaurant_butler/butler_node.py -> /home/user/ros2_ws/build/restaurant_butler/build/lib/restaurant_butler
+[1.530s] running install
+[1.530s] running install_lib
+[1.531s] copying /home/user/ros2_ws/build/restaurant_butler/build/lib/restaurant_butler/butler_node.py -> /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler
+[1.532s] byte-compiling /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler/butler_node.py to butler_node.cpython-310.pyc
+[1.532s] running install_data
+[1.533s] running install_egg_info
+[1.537s] removing '/home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler-0.0.0-py3.10.egg-info' (and everything under it)
+[1.537s] Copying ../../build/restaurant_butler/restaurant_butler.egg-info to /home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages/restaurant_butler-0.0.0-py3.10.egg-info
+[1.538s] running install_scripts
+[1.575s] Installing butler_node script to /home/user/ros2_ws/install/restaurant_butler/lib/restaurant_butler
+[1.576s] writing list of installed files to '/home/user/ros2_ws/build/restaurant_butler/install.log'
+[1.605s] Invoked command in '/home/user/ros2_ws/src/restaurant_butler' returned '0': PYTHONPATH=/home/user/ros2_ws/build/restaurant_butler/prefix_override:/home/user/ros2_ws/install/restaurant_butler/lib/python3.10/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/restaurant_butler build --build-base /home/user/ros2_ws/build/restaurant_butler/build install --record /home/user/ros2_ws/build/restaurant_butler/install.log --single-version-externally-managed install_data
