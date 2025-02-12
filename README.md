@@ -13,7 +13,9 @@ Features 🚀
 ❌ Order Cancellation: If an order is canceled, the robot returns to the kitchen or home, based on the task stage.
 
 Installation & Running the Code ⚙️
+
 Prerequisites
+
 Ensure ROS 2 Humble is installed and properly configured on your system.
 Clone the Repository
 Clone this repository to your local machine:
@@ -51,9 +53,13 @@ Future Improvements 🌟
 ✅ Voice Commands: Enable voice control for an enhanced user experience and better interactivity with the robot.
 
 Author 🤖
+
 Nivedhan TS
+
 Email: tsnivedhan0@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/nivedhan-ts/
+
 GitHub:  https://github.com/Nivedhan10
 
 
