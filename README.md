@@ -45,40 +45,34 @@ bash
 Copy
 Edit
 ros2 run restaurant_butler butler_node
-Future Improvements 🌟
-✅ Navigation Stack: Implement advanced path planning using SLAM and Nav2 for dynamic environments.
 
-✅ Obstacle Avoidance: Integrate LiDAR or other sensor-based solutions for real-time obstacle detection and avoidance.
-
-✅ Voice Commands: Enable voice control for an enhanced user experience and better interactivity with the robot.
 
 Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/YOUR_USERNAME/restaurant-butler-robot.git
+
 cd restaurant-butler-robot
+
 Build and Source the Workspace
-bash
-Copy
-Edit
+
 cd ~/ros2_ws
+
 colcon build
+
 source install/setup.bash
+
 Run the Nodes
+
 Start the Order Manager Node
 
-bash
-Copy
-Edit
 ros2 run restaurant_butler order_manager
+
 Start the Butler Robot Node
 
-bash
-Copy
-Edit
 ros2 run restaurant_butler butler_node
+
 Test Cases 🧪
+
 1️⃣ Basic Order Delivery: Robot moves from home → kitchen → table → home.
 2️⃣ No Confirmation at Kitchen: Returns home after timeout.
 3️⃣ No Confirmation at Table: Returns food to the kitchen before going home.
@@ -88,6 +82,7 @@ Test Cases 🧪
 7️⃣ Skipped Table: If a table does not confirm, it moves to the next one.
 
 Future Improvements 🌟
+
 🚀 Navigation Stack: Implement path planning using Nav2.
 🔍 Obstacle Avoidance: Add LiDAR for dynamic path adjustments.
 🗣️ Voice Commands: Control the robot via voice input.
