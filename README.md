@@ -17,39 +17,10 @@ Installation & Running the Code ⚙️
 Prerequisites
 
 Ensure ROS 2 Humble is installed and properly configured on your system.
-Clone the Repository
-Clone this repository to your local machine:
-
-bash
-Copy
-Edit
-git clone https://github.com/Nivedhan10/restaurant-butler-robot.git 
-cd restaurant-butler-robot
-Build and Source the Workspace
-Make sure you build and source your workspace:
-
-bash
-Copy
-Edit
-cd ~/ros2_ws
-colcon build
-source install/setup.bash
-Running the Code
-Run the Order Manager Node (Simulates order placement):
-bash
-Copy
-Edit
-ros2 run restaurant_butler order_manager
-Run the Butler Robot Node (Executes the robot's food delivery tasks):
-bash
-Copy
-Edit
-ros2 run restaurant_butler butler_node
-
 
 Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/restaurant-butler-robot.git
+git clone https://github.com/Nivedhan10/restaurant-butler-robot.git
 
 cd restaurant-butler-robot
 
@@ -74,20 +45,29 @@ ros2 run restaurant_butler butler_node
 Test Cases 🧪
 
 1️⃣ Basic Order Delivery: Robot moves from home → kitchen → table → home.
+
 2️⃣ No Confirmation at Kitchen: Returns home after timeout.
+
 3️⃣ No Confirmation at Table: Returns food to the kitchen before going home.
+
 4️⃣ Order Cancellation Before Kitchen: Returns home immediately.
+
 5️⃣ Order Cancellation Before Table: Returns food to kitchen, then goes home.
+
 6️⃣ Multiple Orders: Collects all orders and delivers them sequentially.
+
 7️⃣ Skipped Table: If a table does not confirm, it moves to the next one.
 
 Future Improvements 🌟
 
 🚀 Navigation Stack: Implement path planning using Nav2.
+
 🔍 Obstacle Avoidance: Add LiDAR for dynamic path adjustments.
+
 🗣️ Voice Commands: Control the robot via voice input.
 
 Demo Video 🎥
+
 A demo video showcasing all 7 test cases is recorded using Snipping Tool and included in the repository.
 
 
